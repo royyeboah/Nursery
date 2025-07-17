@@ -20,5 +20,7 @@ public class User {
     @OneToOne(mappedBy = "user")
     private StaffProfile staffProfile;
 
+    @OneToOne(mappedBy = "user")
+    private ParentProfile parentProfile;
 
 }

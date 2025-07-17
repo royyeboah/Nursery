@@ -16,6 +16,8 @@ public class ParentProfile {
     @JoinColumn(name = "user_id")
     private User user;
 
+    private String fullName;
+
     @OneToMany(mappedBy = "parent")
     private List<Child> children;
 }
